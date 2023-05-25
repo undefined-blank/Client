@@ -1,40 +1,30 @@
-// import React from "react";
-// import ReactSlider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import SimpleImageSlider from "react-simple-image-slider";
+// import pink from "./../../img/pink.png";
+const images = [
+    { url: "./../../img/1.png" },
+    { url: "./../../img/2.png" },
+    { url: "./../../img/3.png" },
+    { url: "./../../img/4.png" },
+    // { url: "images/5.jpg" },
+    // { url: "images/6.jpg" },
+    // { url: "images/7.jpg" },
+];
 
-// const settings = {
-//     infinite: true,
-//     speed: 500,
-//     autoplay: true,
-//     slidesToShow: 1,
-//     pauseOnHover: true,
-//     arrows: false,
-//     centerMode: true,
-//     centerPadding: "20px",
-//     focusOnSelect: true,
-//   };
+const ImgSlide = () => {
+    return (
+        <div>
+            <SimpleImageSlider
+                width={390}
+                height={137}
+                left={21}
+                top={342}
+                images={images}
+                showBullets={true}
+                showNavs={true}
+            />
+        </div>
+    );
+};
 
-//   const Slider = ({ items, route }) => {
-//     return (
-//         <div className="relative pt-6">
-//             <Slider items={dummyComic} route="comics" />
-//             <Image
-//                 className="absolute -top-1/4 left-0 -z-10 w-80 h-80"
-//                 width={300}
-//                 height={320}
-//                 src="/images/blue-circle.png"
-//                 alt="blue-circle"
-//             />
-//             <Image
-//                 className="absolute -bottom-1/4 right-0 -z-10 w-80 h-80"
-//                 width={300}
-//                 height={320}
-//                 src="/images/red-circle.png"
-//                 alt="red-circle"
-//             />
-//         </div>
-//     );
-// }
-
-// export default ImgSlide;
+export default ImgSlide;
