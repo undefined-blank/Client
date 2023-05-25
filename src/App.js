@@ -5,8 +5,14 @@ import Home from "./components/pages/Home";
 import Feed from "./components/pages/Feed";
 import New from "./components/pages/New";
 import MyPage from "./components/pages/MyPage";
+// import Modal from "./components/Modal/Modal";
 
 function App() {
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => {
+        setModal(!modal);
+    };
+
     const [userAccount, setUserAccount] = useState({
         isConnect: "",
         Account: "",
@@ -78,7 +84,3 @@ function App() {
 }
 
 export default App;
-
-<div className="App">
-    <div className="text-4xl font-bold">Hi, Blank!</div>
-</div>;

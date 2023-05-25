@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import Bottom from "./Bottom";
-import Modal from "../Modal/Modal";
+// import Modal from "../Modal/Modal";
+import "./Modal.css";
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router-dom";
 
 function New() {
-    const [modal, setModal] = useState(false);
+    const [modal, setModal] = useState(true);
     const toggleModal = () => {
         setModal(!modal);
     };
+    const navigate = useNavigate();
+    const closeBtn = () => {
+        navigate("/home");
+    };
     return (
         <>
-            {/* <button className="btn-modal" onClick={toggleModal}>
+            <button className="btn-modal" onClick={toggleModal}>
                 open
-            </button> */}
+            </button>
+
             {modal && (
                 <div className="modal">
                     <div className="overlay"></div>
@@ -24,7 +31,7 @@ function New() {
                             <div className="flex p-4 text-3xl mt-2 ">
                                 <Icon
                                     icon="iconamoon:close-thin"
-                                    onClick={toggleModal}
+                                    onClick={closeBtn}
                                 />
                                 <Icon icon="mdi-light:check" />
                             </div>
@@ -51,7 +58,41 @@ function New() {
                                     placeholder="Anythink you want to write"
                                 ></input>
                             </div>
+
+                            <div className="tabvar p-4">
+                                <button className="tab text-md font-semibold mr-3 text-dashboardGray">
+                                    Survey
+                                </button>
+                                <button className="tab activate text-md font-semibold  border-b-2">
+                                    Test
+                                </button>
+                            </div>
+
+                            <p>
+                                We are providing only MBTI test for now, but
+                                planning to
+                                <br />
+                                diversify the types of tests in the near future.
+                                <br />
+                                You need to write down the proper questions to
+                                <br />
+                                distinguich E/I, N/S, F/T, P/J, and prepare 16
+                                images for
+                                <br />
+                                each MBTI.
+                            </p>
                         </div>
+                    </div>
+                    <div>
+                        <input
+                            style={{
+                                width: 350,
+                                height: 55,
+                                padding: 20,
+                            }}
+                            className="p-2 border-b-2 border-lightgray-500"
+                            placeholder="Write the title here"
+                        ></input>
                     </div>
                 </div>
             )}
