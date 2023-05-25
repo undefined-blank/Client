@@ -18,6 +18,7 @@ function Home() {
             <div className="body" style={{ width: 390, height: 1900 }}>
                 <p>Suggested survey for you</p>
                 <ImgSlide />
+
                 <p>Now trending 🔥</p>
                 <ImgSlide />
             </div>
