@@ -80,3 +80,7 @@ function App() {
 }
 
 export default App;
+
+<div className="App">
+    <div className="text-4xl font-bold">Hi, Blank!</div>
+</div>;
