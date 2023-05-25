@@ -3,6 +3,7 @@ import { BOTTOM_HEIGHT } from '../../utills';
 import { Icon } from '@iconify/react';
 import Bottom from './Bottom';
 import ImgSlide from './ImgSlide';
+import ImgSlide2 from './ImgSlide2';
 
 const dummydata = [
     {
@@ -47,10 +48,14 @@ function Home() {
             </div>
 
             <div className="body" style={{ width: 390, height: 1900 }}>
-                <h1>Suggested survey for you</h1>
-                <ImgSlide />
-                <h1>Now trending 🔥</h1>
-                <ImgSlide />
+                <div className="p-4 pb-2 text-xl font-bold mr-auto text-left">Suggested survey for you</div>
+                <div className="pl-4">
+                    <ImgSlide />
+                </div>
+                <div className="p-4 pb-2 text-xl font-bold mr-auto text-left">Now trending 🔥</div>
+                <div className="pl-4">
+                    <ImgSlide2 />
+                </div>
                 <div className="p-4 pb-2 text-xl font-bold mr-auto text-left">148 Blankers are now answering</div>
                 <div className="flex">
                     <div className="bg-pink h-24 w-72 ml-4">
