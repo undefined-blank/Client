@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import Bottom from "./Bottom";
-import Modal from "../Modal/Modal";
+import "./Modal.css";
 import { Icon } from "@iconify/react";
+import "./../../img/save.png";
 
-function New() {
+export default function Modal() {
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
         setModal(!modal);
     };
     return (
         <>
-            {/* <button className="btn-modal" onClick={toggleModal}>
+            <button className="btn-modal" onClick={toggleModal}>
                 open
-            </button> */}
+            </button>
             {modal && (
                 <div className="modal">
                     <div className="overlay"></div>
@@ -58,5 +58,3 @@ function New() {
         </>
     );
 }
-
-export default New;
