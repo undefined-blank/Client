@@ -47,10 +47,9 @@ function Home() {
             </div>
 
             <div className="body" style={{ width: 390, height: 1900 }}>
-                <p>Suggested survey for you</p>
+                <h1>Suggested survey for you</h1>
                 <ImgSlide />
-
-                <p>Now trending 🔥</p>
+                <h1>Now trending 🔥</h1>
                 <ImgSlide />
                 <div className="p-4 pb-2 text-xl font-bold mr-auto text-left">148 Blankers are now answering</div>
                 <div className="flex">
