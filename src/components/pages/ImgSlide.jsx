@@ -41,6 +41,7 @@ const ImgSlide = () => {
                         <div>BLANK 10</div>
                     </div>
                 </div>
+
                 <div
                     className="bg-slide2 flex justify-between flex-col"
                     style={{ maxWidth: '100%', marginRight: '5px', height: '150px' }}
