@@ -1,28 +1,36 @@
-import React from "react";
-import SimpleImageSlider from "react-simple-image-slider";
-// import pink from "./../../img/pink.png";
-const images = [
-    { url: "./../../img/1.png" },
-    { url: "./../../img/2.png" },
-    { url: "./../../img/3.png" },
-    { url: "./../../img/4.png" },
-    // { url: "images/5.jpg" },
-    // { url: "images/6.jpg" },
-    // { url: "images/7.jpg" },
-];
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 3,
+    },
+};
 
 const ImgSlide = () => {
     return (
         <div>
-            <SimpleImageSlider
-                width={390}
-                height={137}
-                left={21}
-                top={342}
-                images={images}
-                showBullets={true}
-                showNavs={true}
-            />
+            <Carousel responsive={responsive}>
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </Carousel>
         </div>
     );
 };

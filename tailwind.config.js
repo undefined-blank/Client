@@ -13,8 +13,13 @@ module.exports = {
       dashboardGray: '#9FA9B3',
       default: '#0F0F0F',
       descripton: '#CCEFEF',
+      gray: '#E9ECEF',
+      white: '#FFFFFF',
+      pink: '#f5d9d9',
+      gray2: '#afb7c0',
+      index1: '#cfe5da',
+      index2: '#262a4e',
     }
   },
   plugins: [],
 }
-
