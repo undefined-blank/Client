@@ -94,9 +94,9 @@ const MyPage = () =>{
                 </div>
             </div>
             <div className="tabvar">
-                <div className="tab-list py-2">
-                    <button className="font-semibold p-2">Feed</button>
-                    <button className="font-semibold p-2">History</button>
+                <div className="tab-list py-4">
+                    <button className="font-semibold p-2 border-b-4">Feed</button>
+                    <button className="font-semibold p-2 text-dashboardGray">History</button>
                 </div>
                 <div className="contents-list">
                     <div className="feed flex">
