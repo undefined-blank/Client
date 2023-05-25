@@ -10,9 +10,9 @@ export default function Modal() {
     };
     return (
         <>
-            <button className="btn-modal" onClick={toggleModal}>
+            {/* <button className="btn-modal" onClick={toggleModal}>
                 open
-            </button>
+            </button> */}
             {modal && (
                 <div className="modal">
                     <div className="overlay"></div>
