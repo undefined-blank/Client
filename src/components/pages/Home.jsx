@@ -1,7 +1,8 @@
 import React from "react";
+import { BOTTOM_HEIGHT } from "../../utills";
 import { Icon } from "@iconify/react";
 import Bottom from "./Bottom";
-import ImgSlide from "./ImgSlide";
+import ImgSlide from "./ImgSlide2";
 
 const dummydata = [
     {
@@ -140,7 +141,3 @@ function Home() {
 }
 
 export default Home;
-
-function BottomItem() {
-    return <div></div>;
-}
