@@ -4,7 +4,6 @@ import Main from "./components/Main";
 import Home from "./components/pages/Home";
 import Feed from "./components/pages/Feed";
 import New from "./components/pages/New";
-import Reword from "./components/pages/Reword";
 import MyPage from "./components/pages/MyPage";
 
 function App() {
@@ -71,7 +70,6 @@ function App() {
                     <Route path="/Home" element={<Home />} />
                     <Route path="/Feed" element={<Feed />} />
                     <Route path="/New" element={<New />} />
-                    <Route path="/Reword" element={<Reword />} />
                     <Route path="/MyPage" element={<MyPage />} />
                 </Routes>
             </Router>
