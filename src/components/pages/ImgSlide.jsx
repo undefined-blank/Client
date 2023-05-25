@@ -1,11 +1,11 @@
-import React from "react";
-import SimpleImageSlider from "react-simple-image-slider";
+import React from 'react';
+import SimpleImageSlider from 'react-simple-image-slider';
 // import pink from "./../../img/pink.png";
 const images = [
-    { url: "./../../img/1.png" },
-    { url: "./../../img/2.png" },
-    { url: "./../../img/3.png" },
-    { url: "./../../img/4.png" },
+    { url: './../../img/1.png' },
+    { url: './../../img/2.png' },
+    { url: './../../img/3.png' },
+    { url: './../../img/4.png' },
     // { url: "images/5.jpg" },
     // { url: "images/6.jpg" },
     // { url: "images/7.jpg" },

@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
     const navigate = useNavigate();
 
     const [userAccount, setUserAccount] = useState({
-        isConnect: "",
-        Account: "",
+        isConnect: '',
+        Account: '',
     });
     let walletConnect = async () => {
         const accounts = await window.ethereum.request({
-            method: "eth_requestAccounts",
+            method: 'eth_requestAccounts',
         });
         if (accounts.length > 0) {
-            localStorage.setItem("isConnected", accounts);
+            localStorage.setItem('isConnected', accounts);
             setUserAccount({ Account: accounts[0] });
         }
         if (accounts.length === undefined) {
-            localStorage.removeItem("isConnected");
-            setUserAccount({ Account: "" });
+            localStorage.removeItem('isConnected');
+            setUserAccount({ Account: '' });
             console.log(accounts);
         }
-        navigate("/Home");
+        navigate('/Home');
     };
     const getCurrentWalletConnected = async () => {
         if (window.ethereum) {
             try {
                 const addressArray = await window.ethereum.request({
-                    method: "eth_accounts",
+                    method: 'eth_accounts',
                 });
 
                 if (addressArray.length > 0) {
