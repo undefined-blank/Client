@@ -4,6 +4,7 @@ import Bottom from "./Bottom";
 import "./Modal.css";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router-dom";
+import Frame from "./../../img/Frame27.png";
 
 function New() {
     const [modal, setModal] = useState(true);
@@ -58,7 +59,6 @@ function New() {
                                     placeholder="Anythink you want to write"
                                 ></input>
                             </div>
-
                             <div className="tabvar p-4">
                                 <button className="tab text-md font-semibold mr-3 text-dashboardGray">
                                     Survey
@@ -67,7 +67,6 @@ function New() {
                                     Test
                                 </button>
                             </div>
-
                             <p>
                                 We are providing only MBTI test for now, but
                                 planning to
@@ -81,6 +80,19 @@ function New() {
                                 <br />
                                 each MBTI.
                             </p>
+                            <img
+                                src={Frame}
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                }}
+                            />
+                            E vs I
+                            <ul style={{ width: 314 }}>
+                                <li>Option1</li>
+                                <li>Option2</li>
+                            </ul>
                         </div>
                     </div>
                     <div>
