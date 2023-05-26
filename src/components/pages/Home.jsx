@@ -1,5 +1,4 @@
 import React from 'react';
-import { BOTTOM_HEIGHT } from '../../utills';
 import { Icon } from '@iconify/react';
 import Bottom from './Bottom';
 import ImgSlide from './ImgSlide';
