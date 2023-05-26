@@ -29,6 +29,8 @@ module.exports = {
             black: '#000000',
             profileGray: '#D9D9D9',
             dashboardGray: '#9FA9B3',
+            mainBg: '#153d35',
+            mainText: '#7ff5e0',
         },
     },
     plugins: [],
