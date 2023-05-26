@@ -1,7 +1,7 @@
-import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import { useNavigate } from 'react-router-dom';
 
 const responsive = {
     mobile: {
@@ -17,12 +17,12 @@ const ImgSlide = () => {
         <div>
             <Carousel responsive={responsive}>
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide1 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div className="text-text1 p-3 text-lg">
@@ -36,13 +36,14 @@ const ImgSlide = () => {
                         <div>BLANK 10</div>
                     </div>
                 </div>
+
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide2 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div className=" p-3 text-lg mt-auto">
@@ -59,12 +60,12 @@ const ImgSlide = () => {
                 </div>
 
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide3 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div className="text-white p-3 text-lg">
@@ -81,12 +82,12 @@ const ImgSlide = () => {
                 </div>
 
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide4 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div className="text-text2 p-3 text-lg mt-auto">
@@ -103,12 +104,12 @@ const ImgSlide = () => {
                 </div>
 
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide5 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div className="text-text3 p-3 text-lg">
@@ -125,12 +126,12 @@ const ImgSlide = () => {
                 </div>
 
                 <div
-                    onClick={() => navigate("/survey")}
+                    onClick={() => navigate('/survey')}
                     className="bg-slide6 flex justify-between flex-col"
                     style={{
-                        maxWidth: "100%",
-                        marginRight: "5px",
-                        height: "150px",
+                        maxWidth: '100%',
+                        marginRight: '5px',
+                        height: '150px',
                     }}
                 >
                     <div>

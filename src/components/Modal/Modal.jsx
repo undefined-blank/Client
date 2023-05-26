@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./Modal.css";
-import { Icon } from "@iconify/react";
-import "./../../img/save.png";
+import React, { useState } from 'react';
+import './Modal.css';
+import { Icon } from '@iconify/react';
+import './../../img/save.png';
 
 export default function Modal() {
     const [modal, setModal] = useState(false);
