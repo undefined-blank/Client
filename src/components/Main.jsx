@@ -46,18 +46,19 @@ const Main = () => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center h-screen flex-col ">
+        <div className="flex items-center justify-center h-screen flex-col bg-mainBg">
             <img src="/blankLogo.svg" alt="My Image" className="w-50" />
             <div>
                 <button
                     onClick={walletConnect}
                     style={{
-                        border: '3px solid black',
-                        padding: '23px',
+                        border: '4px solid #7ff5e0',
+                        padding: '21px',
                         borderRadius: '20px',
                         fontSize: '23px',
                         marginTop: '30px',
                         fontWeight: 'bold',
+                        color: '#7ff5e0',
                     }}
                 >
                     Wallet Connect
