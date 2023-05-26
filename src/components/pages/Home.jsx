@@ -2,7 +2,8 @@ import React from "react";
 import { BOTTOM_HEIGHT } from "../../utills";
 import { Icon } from "@iconify/react";
 import Bottom from "./Bottom";
-import ImgSlide from "./ImgSlide2";
+import ImgSlide from "./ImgSlide";
+import ImgSlide2 from "./ImgSlide2";
 
 const dummydata = [
     {

@@ -46,8 +46,23 @@ const Main = () => {
     }, []);
 
     return (
-        <div>
-            <button onClick={walletConnect}>로그인</button>
+        <div className="flex items-center justify-center h-screen flex-col ">
+            <img src="/blankLogo.svg" alt="My Image" className="w-50" />
+            <div>
+                <button
+                    onClick={walletConnect}
+                    style={{
+                        border: '3px solid black',
+                        padding: '23px',
+                        borderRadius: '20px',
+                        fontSize: '23px',
+                        marginTop: '30px',
+                        fontWeight: 'bold',
+                    }}
+                >
+                    Wallet Connect
+                </button>
+            </div>
         </div>
     );
 };

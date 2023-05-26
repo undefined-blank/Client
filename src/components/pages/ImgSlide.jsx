@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useNavigate } from "react-router-dom";
 
 const responsive = {
     mobile: {
@@ -10,10 +11,13 @@ const responsive = {
 };
 
 const ImgSlide = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             <Carousel responsive={responsive}>
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide1 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
@@ -33,6 +37,7 @@ const ImgSlide = () => {
                     </div>
                 </div>
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide2 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
@@ -54,6 +59,7 @@ const ImgSlide = () => {
                 </div>
 
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide3 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
@@ -75,6 +81,7 @@ const ImgSlide = () => {
                 </div>
 
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide4 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
@@ -96,6 +103,7 @@ const ImgSlide = () => {
                 </div>
 
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide5 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
@@ -117,6 +125,7 @@ const ImgSlide = () => {
                 </div>
 
                 <div
+                    onClick={() => navigate("/survey")}
                     className="bg-slide6 flex justify-between flex-col"
                     style={{
                         maxWidth: "100%",
