@@ -68,3 +68,8 @@ body.active-modal {
     width: 100%;
 }
 
+/* Survey Form */
+
+.survey-form .option-item .option-left-container {
+    width: 95%;
+}
