@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Main from "./components/Main";
 import Home from "./components/pages/Home";
 import Feed from "./components/pages/Feed";
+import Survey from "./components/pages/Survey";
 import MyPage from "./components/pages/MyPage";
 import Bottom from "./components/pages/Bottom";
 import CreateModal from "./components/Modal/CreateModal";
@@ -78,6 +79,7 @@ function App() {
                     <Route path="/Home" element={<Home toggleModa/>} />
                     <Route path="/Feed" element={<Feed />} />
                     <Route path="/MyPage" element={<MyPage />} />
+                    <Route path="/Survey" element={<Survey/>} />
                 </Routes>
                 <Bottom toggleModal={toggleModal}/>
             </Router>

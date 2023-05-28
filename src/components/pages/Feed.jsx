@@ -10,7 +10,7 @@ function Feed() {
     // const [tab, setTab] = useState("new")
 
     return (
-        <div className="bottom">
+        <div className="feed">
             <div className="p-4 flex justify-between shadow-md">
                 <h1 className="text-xl font-semibold">Feed</h1>
                 { isTyped?

@@ -39,8 +39,8 @@ export default function CreateModal({isOpen, toggleModal}) {
                         </div>
                         <div className="border-b-4 border-[#E9E9EA]">
                             <textarea
-                                className="w-full text-sm h-48 py-4"
-                                placeholder="Anythink you want to write"
+                                className="w-full text-sm h-48 mt-2 py-2 px-1 ring-0 resize-none"
+                                placeholder="Anything you want to write"
                             ></textarea>
                         </div>
                         <div className="tabvar py-1">
