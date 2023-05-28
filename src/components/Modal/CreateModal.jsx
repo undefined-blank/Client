@@ -98,10 +98,10 @@ export default function CreateModal({isOpen, toggleModal}) {
                                         <li className="option-item flex justify-between">
                                             <div className="option-left-container flex items-center">
                                                 <div className="option-number text-sm">
-                                                    1
+                                                    2
                                                 </div>
                                                 <div className="option-input">
-                                                    <input className="text-sm" placeholder="option 1"></input>
+                                                    <input className="text-sm" placeholder="option 2"></input>
                                                 </div>
                                             </div>
                                             <div className="option-action flex items-center">

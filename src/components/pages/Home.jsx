@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 import { Icon } from '@iconify/react';
 import Bottom from './Bottom';
@@ -15,7 +16,7 @@ const dummydata = [
         writer: 'adbfadad.lens',
     },
     {
-        title: 'asfbafdba afbadf vs Ice fadbafdb afbsa',
+        title: '[Pahver] Research on User Experience',
         writer: 'asdgasdg.lens',
     },
     {
@@ -166,7 +167,7 @@ function Home() {
                 </div>
                 {dummydata.map((data, index) => {
                     return (
-                        <div
+                        <Link to="/Survey"
                             className={`${
                                 index % 3 === 0 ? 'bg-pink' : index % 3 === 1 ? 'bg-index1' : 'bg-index2 text-white'
                             } h-24 ml-4 my-3 p-2 flex flex-col`}
@@ -178,7 +179,7 @@ function Home() {
                                 <div className="w-5 h-5 bg-white rounded-full"></div>
                                 <div className="ml-1 text-bold">{data.writer}</div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>
