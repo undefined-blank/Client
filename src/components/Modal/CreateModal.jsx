@@ -16,53 +16,44 @@ export default function CreateModal({isOpen, toggleModal}) {
             <div className="modal">
                 <div className="overlay"></div>
                 <div className="modal-content">
-                    <div className="flex justify-between border-b-4 border-lightgray-500">
-                        <div className="p-4 text-3xl font-bold">
-                            Create New
-                        </div>
-                        <div className="flex p-4 text-3xl mt-2 ">
+                    <div className="modal-header flex py-4 px-4 justify-between border-b-4 border-[#f2f2f2] items-center">
+                        <div className="flex text-3xl">
                             <Icon
                                 icon="iconamoon:close-thin"
                                 onClick={closeBtn}
                             />
-                            <Icon icon="mdi-light:check" />
                         </div>
+                        <div className="text font-semibold">
+                            Create New
+                        </div>
+                        <button className="">
+                            save
+                        </button>
                     </div>
-                    <div>
-                        <div>
+                    <div className="description px-4">
+                        <div className="">
                             <input
-                                style={{
-                                    width: 350,
-                                    height: 55,
-                                    padding: 20,
-                                }}
-                                className="p-2 border-b-2 border-lightgray-500"
+                                className="w-full pl-2 py-3 border-b-2 font-semibold"
                                 placeholder="Write the title here"
-                            ></input>
+                            />
                         </div>
-                        <div className="border-b-4">
-                            <input
-                                style={{
-                                    width: 350,
-                                    height: 167,
-                                    padding: 20,
-                                }}
+                        <div className="border-b-4 border-[#E9E9EA]">
+                            <textarea
+                                className="w-full text-sm h-48 py-4"
                                 placeholder="Anythink you want to write"
-                            ></input>
+                            ></textarea>
                         </div>
-                        <div className="tabvar p-4">
-                            <button className="tab text-md font-semibold mr-3 text-dashboardGray">
+                        <div className="tabvar py-1">
+                            <button className="tab text-md font-semibold mr-3 text-sm text-dashboardGray p-2">
                                 Survey
                             </button>
-                            <button className="tab activate text-md font-semibold  border-b-2">
+                            <button className="tab activate text-md font-semibold text-sm  border-b-2 p-2">
                                 Test
                             </button>
                         </div>
-                        <p>
+                        <p className="text-sm mb-6">
                             We are providing only MBTI test for now, but
-                            planning to
-                            <br />
-                            diversify the types of tests in the near future.
+                            planning to diversify the types of tests in the near future.
                             <br />
                             You need to write down the proper questions to
                             <br />
@@ -71,19 +62,62 @@ export default function CreateModal({isOpen, toggleModal}) {
                             <br />
                             each MBTI.
                         </p>
-                        <img
-                            src={Frame}
-                            style={{
-                                display: "flex",
-                                flexDirection: "row",
-                                alignItems: "center",
-                            }}
-                        />
-                        E vs I
-                        <ul style={{ width: 314 }}>
-                            <li>Option1</li>
-                            <li>Option2</li>
-                        </ul>
+                        <div className="form">
+                            <div className="question-group">
+                                <div className="question-section flex items-center justify-between mb-2">
+                                    <div className="question-left-container flex item-center">
+                                        <div className="question-number mr-2">
+                                            <div className="circle rounded-full border w-6 h-6 pt-[1px] text-center text-sm font-semibold">
+                                                01
+                                            </div>
+                                        </div>
+                                        <div className="question text-sm pt-[2px]">
+                                            <input placeholder="E vs I"></input>
+                                        </div>
+                                    </div>
+                                    <div className="question-setting">
+                                        <Icon className="text-3xl" icon="mdi-light:dots-horizontal"></Icon>
+                                    </div>
+                                </div>
+                                <div className="option-section pl-2 mb-4">
+                                    <ul className="option-list mb-2">
+                                        <li className="option-item flex justify-between">
+                                            <div className="option-left-container flex items-center">
+                                                <div className="option-number text-sm">
+                                                    1
+                                                </div>
+                                                <div className="option-input">
+                                                    <input className="text-sm" placeholder="option 1"></input>
+                                                </div>
+                                            </div>
+                                            <div className="option-action flex items-center">
+                                                <Icon className="text-2xl mr-2" icon="mdi-light:image"></Icon>
+                                                <Icon className="text-2xl mr-1" icon="mdi-light:delete"></Icon>
+                                            </div>
+                                        </li>
+                                        <li className="option-item flex justify-between">
+                                            <div className="option-left-container flex items-center">
+                                                <div className="option-number text-sm">
+                                                    1
+                                                </div>
+                                                <div className="option-input">
+                                                    <input className="text-sm" placeholder="option 1"></input>
+                                                </div>
+                                            </div>
+                                            <div className="option-action flex items-center">
+                                                <Icon className="text-2xl mr-2" icon="mdi-light:image"></Icon>
+                                                <Icon className="text-2xl mr-1" icon="mdi-light:delete"></Icon>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div className="option-add flex items-center text-md text-dashboardGray">
+                                        <Icon className="mr-1" icon="mdi-light:plus-circle"></Icon>
+                                        <span className="text-xs mt-[1px]">Add another option</span>
+                                    </div>
+                                </div> {/* option */}
+                            </div>{/* question */}
+                        </div> {/* form */}
+                        <button className="w-full bg-primaryColor rounded-xl font-bold py-3 mb-12">Submit</button>
                     </div>
                 </div>
                 <div>

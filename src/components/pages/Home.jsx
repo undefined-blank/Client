@@ -86,7 +86,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="body" style={{ width: 390, height: 1900 }}>
+            <div className="body" style={{ width: 390 }}>
                 <div className="p-4 pb-2 text-xl font-bold mr-auto text-left">Suggested survey for you</div>
                 <div className="ml-4">
                     <ImgSlide />
