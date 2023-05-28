@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Bottom from "./Bottom";
 // import Modal from "../Modal/Modal";
 import "./Modal.css";
 import { Icon } from "@iconify/react";

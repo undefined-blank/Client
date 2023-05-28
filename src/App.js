@@ -3,14 +3,15 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Main from "./components/Main";
 import Home from "./components/pages/Home";
 import Feed from "./components/pages/Feed";
-import New from "./components/pages/New";
 import MyPage from "./components/pages/MyPage";
-// import Modal from "./components/Modal/Modal";
+import Bottom from "./components/pages/Bottom";
+import CreateModal from "./components/Modal/CreateModal";
 
 function App() {
-    const [modal, setModal] = useState(false);
+    const [isOpenCreateModal, setIsOpenCreateModal] = useState(false);
+    
     const toggleModal = () => {
-        setModal(!modal);
+        setIsOpenCreateModal(!isOpenCreateModal);
     };
 
     const [userAccount, setUserAccount] = useState({
@@ -62,6 +63,7 @@ function App() {
     return (
         <>
             <Router>
+                <CreateModal isOpen={isOpenCreateModal} toggleModal={toggleModal}/>
                 <Routes>
                     <Route
                         path="/"
@@ -73,11 +75,11 @@ function App() {
                             />
                         }
                     />
-                    <Route path="/Home" element={<Home />} />
+                    <Route path="/Home" element={<Home toggleModa/>} />
                     <Route path="/Feed" element={<Feed />} />
-                    <Route path="/New" element={<New />} />
                     <Route path="/MyPage" element={<MyPage />} />
                 </Routes>
+                <Bottom toggleModal={toggleModal}/>
             </Router>
         </>
     );

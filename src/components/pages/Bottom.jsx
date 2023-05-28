@@ -2,7 +2,8 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 
-const Bottom = () => {
+const Bottom = ({toggleModal}) => {
+
     return (
         <nav className="w-full flex justify-evenly fixed bottom-0 p-4 bg-white">
             {/* 하단 네비게이션 최상위 태그 */}
@@ -15,10 +16,13 @@ const Bottom = () => {
                 <Icon icon="mdi-light:grid" />
                 <p>Feed</p>
             </Link>
-            <Link to="/New" className="w-1/4 flex justify-center flex-col items-center shrink-0">
+            <button 
+                className="w-1/4 flex justify-center flex-col items-center shrink-0"
+                onClick={toggleModal}
+            >
                 <Icon icon="mdi-light:plus-box" />
                 New
-            </Link>
+            </button>
             <Link to="/MyPage" className="w-1/4 flex justify-center flex-col items-center shrink-0">
                 <Icon icon="mdi-light:account" />
                 MyPage
