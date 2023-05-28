@@ -25,7 +25,7 @@ const Bottom = ({toggleModal}) => {
             </button>
             <Link to="/MyPage" className="w-1/4 flex justify-center flex-col items-center shrink-0">
                 <Icon icon="mdi-light:account" />
-                MyPage
+                My
             </Link>
         </nav>
     );
