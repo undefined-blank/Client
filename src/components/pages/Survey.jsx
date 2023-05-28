@@ -1,12 +1,19 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Icon } from '@iconify/react';
+import "./Survey.css";
 
 const Survey = ()=>{
     const navigate = useNavigate();
 
     function clickBackHandler(){
         navigate(-1);
+    }
+
+    function clickAnswerHandler(e){
+        console.log(e);
+        console.log(e.target);
+        console.log(this);
     }
 
     return (
@@ -41,44 +48,40 @@ const Survey = ()=>{
                     <div className="option-section pl-2 mb-4">
                         <ul className="option-list mb-2">
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        1
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="1_quesition" value="1"/>
+                                    <div className="option-number text-sm">1</div>
+                                    <div className="option-input ">
                                         Great
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        2
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="1_quesition" value="2"/>
+                                    <div className="option-number text-sm">2</div>
+                                    <div className="option-input ">
                                         Good
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        3
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="1_quesition" value="3"/>
+                                    <div className="option-number text-sm">3</div>
+                                    <div className="option-input ">
                                         So so
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        4
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="1_quesition" value="4"/>
+                                    <div className="option-number text-sm">4</div>
+                                    <div className="option-input ">
                                         Not at all
                                     </div>
-                                </div>
+                                </label>
                             </li>
                         </ul>
                     </div> {/* option */}
@@ -97,46 +100,42 @@ const Survey = ()=>{
                         </div>
                     </div>
                     <div className="option-section pl-2 mb-4">
-                        <ul className="option-list mb-2">
+                    <ul className="option-list mb-2">
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        1
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="2_quesition" value="1"/>
+                                    <div className="option-number text-sm">1</div>
+                                    <div className="option-input ">
                                         Great
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        2
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="2_quesition" value="2"/>
+                                    <div className="option-number text-sm">2</div>
+                                    <div className="option-input ">
                                         Good
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        3
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="2_quesition" value="3"/>
+                                    <div className="option-number text-sm">3</div>
+                                    <div className="option-input ">
                                         So so
                                     </div>
-                                </div>
+                                </label>
                             </li>
                             <li className="option-item flex justify-between">
-                                <div className="option-left-container flex items-center">
-                                    <div className="option-number text-sm">
-                                        4
-                                    </div>
-                                    <div className="option-input">
+                                <label className="option-left-container flex items-center">
+                                    <input className="option-radio" type="radio" name="2_quesition" value="4"/>
+                                    <div className="option-number text-sm">4</div>
+                                    <div className="option-input ">
                                         Not at all
                                     </div>
-                                </div>
+                                </label>
                             </li>
                         </ul>
                     </div> {/* option */}

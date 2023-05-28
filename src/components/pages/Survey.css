@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form.survey-form .option-item .option-left-container {
+        cursor: pointer;
+    }
+
+    .option-item .option-radio[type="radio"]:checked ~ * {
+        color: #7FF5E0;
+    }
+}
